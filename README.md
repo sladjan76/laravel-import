@@ -14,6 +14,10 @@
 - Run migrations and seeders from a container
    - docker compose exec app php artisan migrate
    - docker compose exec app php artisan db:seed
+- Clearing caches (optional)
+   - docker compose exec app php artisan cache:clear
+   - docker compose exec app php artisan config:clear
+   - docker compose exec app php artisan route:clear
 - App will be accessible on http://127.0.0.1:8000
    - Admin user:
       - username: admin@admin.com
